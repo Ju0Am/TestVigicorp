@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+    <h1>Test Vigicorp</h1>
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="{{ label }}"> {{ message }} </div>
+        {% endfor %}
+    {% endfor %}
+{% endblock %}
